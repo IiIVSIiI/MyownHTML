@@ -13,72 +13,59 @@
     <header>
         <nav>
             <a href="/form/form.html"><img width="50" src="img/client.png" alt="client-room"></a>
-            <a href="#">Mein</a>
-            <a href="#">Products</a>
-            <a href="#">News</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contacts</a>
-            <a href="#">About us</a>
+            <ul class="nav-pages">
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
             <a href="#basket"><img width="50" src="img/cart.png" alt="client-basket"></a>
+
         </nav>
-        <img width="960" src="img/maincar.png" alt="peugeot_onyx_image">
-        <div><input type="search"></div>
+        <img width="1000" src="img/maincar.png" alt="peugeot onyx image">
+         <label class="search">Search:<input class="search-row" type="search" placeholder="....Search"></label>
     </header>
     <main>
-        <div class="featured-container-lg">
-            <div class="call-out">
-                Featured
-            </div>
-            <div class="product-container">
-                <div>
-                    <div class="image-lg" style="padding-top: 10px; padding-left: 18px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden;">
-                        <img alt="Featured product" class="featured-img" title="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" src="https://images.nvidia.com/graphics-cards/geforce/turing/images/geforce-rtx-2080-ti-store-thumbnail-300x169-udtm@2x.jpg" style="width: 264.497px; height: 149px;">
-                    </div>
-                    <h2 class="name">
+        <div class="product-container">
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" title="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" src="img/nvo.jpg">
+
+                <div class="second">
+                    <h4 class="name">
                         NVIDIA GeForce RTX™ 2080 Ti
-                    </h2>
-                    <div class="specs-container">
-                        <ul>
-                            <li>
-                                <div class="specs">Cooling System: Fan</div>
-                            </li>
-                            <li>
-                                <div class="specs">GPU Clock Speed: 1350 MHz</div>
-                            </li>
-                            <li>
-                                <div class="specs">GPU Memory Size: 11 GB</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a class="more-info">More Info</a>
-                    </div>
+                    </h4>
+                    <ul class="specs-table">
+                        <li>
+                            <div class="specs">Cooling System: Fan</div>
+                        </li>
+                        <li>
+                            <div class="specs">GPU Clock Speed: 1350 MHz</div>
+                        </li>
+                        <li>
+                            <div class="specs">GPU Memory Size: 11 GB</div>
+                        </li>
+                    </ul>
                 </div>
-                <div style="background-image: none;">
-                    <div class="product-item" style="visibility: visible;">
-                        <div class="product-price">$ 1,199.<sup>00</sup></div>
-                        <div><a href="#">Add to Cart</a></div>
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 1,199.<sup>00</sup></h3>
                     </div>
-                    <div>
-                        <div>
-                            <span class="compare">Compare</span>
-                        </div>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
                     </div>
+                    <span class="compare">Compare</span>
                 </div>
             </div>
-        </div>
-        <div class="product-details">
-            <div>
-                <div class="featured-product">Featured</div>
-                <div class="image-container" style="padding-top: 10px; padding-left: 18px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden;">
-                    <img alt="video_card" class="featured-img" title="NVIDIA RTX 2080 Graphics Cards and gaming laptops" src="https://images.nvidia.com/graphics-cards/geforce/turing/images/geforce-rtx-2080-store-thumbnail-300x169-udtm@2x.jpg" style="width: 154.438px; height: 87px;">
-                </div>
-            </div>
-            <div class="details">
-                <div class="product-details-featured-product" style="visibility: hidden">Featured</div>
-                <h2 class="name">NVIDIA GeForce RTX™ 2080</h2>
-                <div class="specs-container">
-                    <ul>
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA RTX 2080 Graphics Cards and gaming laptops" title="NVIDIA RTX 2080 Graphics Cards and gaming laptops" src="img/nvt.jpg">
+
+                <div class="second">
+                    <h4 class="name">
+                        NVIDIA GeForce RTX™ 2080
+                    </h4>
+                    <ul class="specs-table">
                         <li>
                             <div class="specs">Cooling System: Fan</div>
                         </li>
@@ -90,182 +77,111 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div style="background-image: none;">
-                <div class="featured-product" style="visibility: hidden">Featured</div>
-                <div class="product-item" style="visibility: visible;">
-                    <div class="price js-product-price outside-page">$ 799.<sup>00</sup></div>
-                    <div><a href="#">Add to Cart</a></div>
-                </div>
-                <div class="compare-remove-container">
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 799.<sup>00</sup></h3>
+                    </div>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
+                    </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
-        </div>
-        <div class="product-details">
-            <div>
-                <div class="product-details-featured-product">Featured</div>
-                <div class="product-details-image-container-list" style="padding-top: 10px; padding-left: 18px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden;">
-                    <img alt="" class="featured-img" title="NVIDIA RTX 2070 Graphics Cards and gaming laptops" src="https://images.nvidia.com/graphics-cards/geforce/turing/images/geforce-rtx-2070-store-thumbnail-300x169-udtm@2x.jpg" style="width: 154.438px; height: 87px;">
-                </div>
-            </div>
-            <div class="details">
-                <div class=" product-details-featured-product " style="visibility: hidden ">Featured</div>
-                <h2 class="name ">NVIDIA GeForce RTX™ 2070</h2>
-                <div class="specs-container ">
-                    <ul>
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA RTX 2070 Graphics Cards and gaming laptops" title="NVIDIA RTX 2070 Graphics Cards and gaming laptops" src="img/nvth.jpg">
+
+                <div class="second">
+                    <h4 class="name">
+                        NVIDIA GeForce RTX™ 2070
+                    </h4>
+                    <ul class="specs-table">
                         <li>
-                            <div class="specs ">Cooling System: Fan</div>
+                            <div class="specs">Cooling System: Fan</div>
                         </li>
                         <li>
-                            <div class="specs ">GPU Clock Speed: 1410 MHz</div>
+                            <div class="specs">GPU Clock Speed: 1410 MHz</div>
                         </li>
                         <li>
-                            <div class="specs ">GPU Memory Size: 8 GB</div>
+                            <div class="specs">GPU Memory Size: 8 GB</div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div style="background-image: none; ">
-                <div class="featured-product " style="visibility: hidden ">Featured</div>
-                <div class="product-item " style="visibility: visible; ">
-                    <div class="product-price ">$ 599.<sup>00</sup></div>
-                    <div><a href="# ">Add to Cart</a></div>
-                </div>
-                <div class="compare-remove-container ">
-                    <span class="compare ">Compare</span>
-                </div>
-            </div>
-        </div>
-        <div class="product-details ">
-            <div class="img">
-                <div class="featured-product ">Featured</div>
-                <div class="product-container " style="padding-top: 10px; padding-left: 36px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden; ">
-                    <img alt=" " class="featured-img " title="NVIDIA GTX 1080 Graphics Cards and gaming laptops " src="https://images.nvidia.com/pascal/img/gtx1080/GeForce_GTX_1080_3qtr_Front_Left.png " style="width: 117.974px; height: 87px; ">
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 599.<sup>00</sup></h3>
+                    </div>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
+                    </div>
+                    <span class="compare">Compare</span>
                 </div>
             </div>
-            <div class="details ">
-                <div class="featured-product " style="visibility: hidden ">Featured</div>
-                <h2 class="name ">NVIDIA - GeForce GTX 1080 Founders Edition 8GB GDDR5X</h2>
-                <div class="specs-container ">
-                    <ul>
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA GTX 1080 Graphics Cards and gaming laptops" title="NVIDIA GTX 1080 Graphics Cards and gaming laptops" src="img/nvf.jpg">
+
+                <div class="second">
+                    <h4 class="name">
+                        NVIDIA GeForce GTX 1080 FOUNDERS 8GB EDITION GDDR5X
+                    </h4>
+                    <ul class="specs-table">
                         <li>
-                            <div class="specs ">Cooling System: Fan</div>
+                            <div class="specs">Cooling System: Fan</div>
                         </li>
                         <li>
-                            <div class="specs ">GPU Clock Speed: 1607 MHz</div>
+                            <div class="specs">GPU Clock Speed: 1607 MHz</div>
                         </li>
                         <li>
-                            <div class="specs ">GPU Memory Size: 8 GB</div>
+                            <div class="specs">GPU Memory Size: 8 GB</div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div>
-                <div class="product-details-featured-product " style="visibility: hidden ">Featured</div>
-                <div class="product-item " style="visibility: visible; ">
-                    <div class="product-price ">$ 549.<sup>00</sup></div>
-                    <div class="price clearfix ">
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 549.<sup>00</sup></h3>
                     </div>
-                    <div style="font-weight: bold; ">
-                        <a href="# ">
-                            <div class="btn ">OUT OF STOCK</div>
-                        </a>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
                     </div>
-                </div>
-                <div class="compare-remove-container ">
-                    <span class="compare ">Compare</span>
+                    <span class="compare">Compare</span>
                 </div>
             </div>
-        </div>
-        <div class="product-details-list-tile ">
-            <div class="img-col-xl ">
-                <div class="product-details-featured-product ">Featured</div>
-                <div class="product-container " style="padding-top: 16px; padding-left: 10px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden; ">
-                    <img alt=" " class="featured-img " title="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops " src="https://images.nvidia.com/pascal/img/gtx-1070-ti/GeForce_GTX_1070Ti_3qtr_Front_Left.png " style="width: 170px; height: 75.9574px; ">
-                </div>
-            </div>
-            <div class="details ">
-                <div class="product-details-featured-product " style="visibility: hidden ">Featured</div>
-                <h2 class="name ">NVIDIA - GeForce GTX 1070 Ti Founders Edition 8GB GDDR5</h2>
-                <div class="specs-container ">
-                    <ul>
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" title="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" src="img/nvfi.jpg">
+
+                <div class="second">
+                    <h4 class="name">
+                        NVIDIA GeForce GTX 1070 Ti FOUNDERS EDITION 8GB GDDR5
+                    </h4>
+                    <ul class="specs-table">
                         <li>
-                            <div class="specs ">Cooling System: Fan</div>
+                            <div class="specs">Cooling System: Fan</div>
                         </li>
                         <li>
-                            <div class="specs ">GPU Clock Speed: 1607 MHz</div>
+                            <div class="specs">GPU Clock Speed: 1607 MHz</div>
                         </li>
                         <li>
-                            <div class="specs ">GPU Memory Size: 8 GB</div>
+                            <div class="specs">GPU Memory Size: 8 GB</div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="buy-bg " style="background-image: none; ">
-                <div class="product-details-featured-product " style="visibility: hidden ">Featured</div>
-                <div class="product-item " style="visibility: visible; ">
-                    <div class="price js-product-price outside-page ">$ 449.<sup>00</sup></div>
-                    <div class="price clearfix ">
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 449.<sup>00</sup></h3>
                     </div>
-                    <div style="font-weight: bold; ">
-                        <a href="# ">
-                            <div class="btn ">OUT OF STOCK</div>
-                        </a>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
                     </div>
-                </div>
-                <div class="compare-remove-container ">
-                    <span class="compare ">Compare</span>
+                    <span class="compare">Compare</span>
                 </div>
             </div>
-        </div>
-        <div class="product-details-list-tile ">
-            <div class="img-col-xl ">
-                <div class="featured-product ">Featured</div>
-                <div class="product-image-container " style="padding-top: 16px; padding-left: 10px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden; ">
-                    <img alt=" " class="featured-img " title="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops " src="https://images.nvidia.com/pascal/img/gtx-1070-ti/GeForce_GTX_1070Ti_3qtr_Front_Left.png " style="width: 170px; height: 75.9574px; ">
-                </div>
-            </div>
-            <div class="details-col ">
-                <div class="featured-product " style="visibility: hidden ">Featured</div>
-                <h2 class="name ">NVIDIA - GeForce GTX 1070 Ti Founders Edition 8GB GDDR5</h2>
-                <div class="specs-container ">
-                    <ul>
-                        <li>
-                            <div class="specs ">Cooling System: Fan</div>
-                        </li>
-                        <li>
-                            <div class="specs ">GPU Clock Speed: 1607 MHz</div>
-                        </li>
-                        <li>
-                            <div class="specs ">GPU Memory Size: 8 GB</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-price ">$ 449.<sup>00</sup></div>
-            <div class="price clearfix ">
-            </div>
-            <div style="font-weight: bold; ">
-                <a href="# ">OUT OF STOCK
-                </a>
-            </div>
-        </div>
-        <div class="compare-remove">
-            <span class="compare ">Compare</span>
-        </div>
-        <div class="product-details">
-            <div class="img-col-xl">
-                <div class="product-details-featured-product">Featured</div>
-                <div class="product-image-container" style="padding-top: 16px; padding-left: 10px; background: rgb(255, 255, 255); visibility: visible; overflow: hidden;">
-                    <img alt="" class="featured-img" title="NVIDIA GTX 1070 Graphics Cards and gaming laptops" src="https://images.nvidia.com/pascal/img/gtx-1070-ti/GeForce_GTX_1070Ti_3qtr_Front_Left.png" style="width: 170px; height: 75.9574px;">
-                </div>
-            </div>
-            <div class="details">
-                <div class="product-details-featured-product" style="visibility: hidden">Featured</div>
-                <h2 class="name">NVIDIA - GeForce GTX 1070 Founders Edition 8GB GDDR5</h2>
-                <div class="specs">
-                    <ul>
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" title="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" src="img/nvsix.jpg">
+
+                <div class="second">
+                    <h4 class="name">
+                        NVIDIA GeForce GTX 1070 FOUNDERS EDITION 8GB GDDR5
+                    </h4>
+                    <ul class="specs-table">
                         <li>
                             <div class="specs">Cooling System: Fan</div>
                         </li>
@@ -277,50 +193,75 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div style="background-image: none;">
-                <div class="product-details-featured-product" style="visibility: hidden">Featured</div>
-                <div class="product-item" style="visibility: visible;">
-                    <div class="price js-product-price outside-page">$ 399.<sup>00</sup></div>
-
-                    <div><a class="green-add-button" href="#;">Add to Cart</a></div>
-                </div>
-                <div class="compare-remove-container">
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 399.<sup>00</sup></h3>
+                    </div>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
+                    </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
+            <div class="prod-one">
+                <img class="first" alt="NVIDIA GTX 1060 Graphics Cards and gaming laptops" title="NVIDIA GTX 1060 Graphics Cards and gaming laptops" src="img/nvsev.jpg">
+
+                <div class="second">
+                    <h4 class="name">
+                        NVIDIA GeForce GTX 1060 FOUNDERS EDITION 6GB GDDR5
+                    </h4>
+                    <ul class="specs-table">
+                        <li>
+                            <div class="specs">Cooling System: Fan</div>
+                        </li>
+                        <li>
+                            <div class="specs">GPU Clock Speed: 1506 MHz</div>
+                        </li>
+                        <li>
+                            <div class="specs">GPU Memory Size: 6 GB</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <div class="product-price">
+                        <h3>$ 299.<sup>00</sup></h3>
+                    </div>
+                    <div class="addtocart">
+                        <a href="#"><img src="img/addto.jpg"></a>
+                    </div>
+                    <span class="compare">Compare</span>
+                </div>
+            </div>
+
         </div>
-            </main>
-    <form novalidate="" class="ng-valid">
-            <input class="reset-filter" style="margin-bottom: 25px;" type="button" disabled="" value="RESET FILTERS">
+        
+        <form class="ng-valid">
+            <input type="button" value="RESET FILTERS">
             <ul class="filter-list">
-                <li class="filter-item medium-6 small-12" id="category_filter">
+                <li <div>
+                    Product Category
                     <div>
-                        <div class="filter-title">
-                            Product Category
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                                <ul class="filter-values">
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="category_filter-0" name="category_filter-0" value="false">
-                                            <label for="category_filter-0">
+                        <div class="filter-content">
+                            <ul class="filter-values">
+                                <li class="filter-value">
+                                    <div class="filter-values-content">
+                                        <input type="checkbox" id="category_filter-0" name="category_filter-0" value="false">
+                                        <label for="category_filter-0">
 												<span>Graphics Cards</span>	
 												</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="category_filter-1" name="category_filter-1" value="false">
-                                            <label for="category_filter-1">
+                                    </div>
+                                </li>
+                                <li class="filter-value">
+                                    <div class="filter-values-content">
+                                        <input type="checkbox" id="category_filter-1" name="category_filter-1" value="false">
+                                        <label for="category_filter-1">
 											<span>Gaming Laptops</span>	
 										    </label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                     </div>
                 </li>
                 <li class="filter-item medium-6 small-12" id="gpu_filter">
@@ -589,6 +530,7 @@
                 </li>
             </ul>
         </form>
+    </main>
 </body>
 
 </html>
