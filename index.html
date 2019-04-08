@@ -11,8 +11,9 @@
 
 <body>
     <header>
-        <nav>
-            <a href="/form/form.html"><img width="50" src="img/vcard.png" alt="client-room"></a>
+        <nav class="one">
+            <img class="hide-icon" src="img/burger.png">
+            <a class="client-link" href="/form/form.html"><img  src="img/vcard.png" alt="client-room"></a>
             <ul class="nav-pages">
                 <li><a href="#">Main</a></li>
                 <li><a href="#">Products</a></li>
@@ -21,18 +22,79 @@
                 <li><a href="#">Contacts</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
-            <a href="#basket"><img width="50" src="img/cart.png" alt="client-basket"></a>
-
+            <a class="client-linkend" href="#basket"><img src="img/cart.png" alt="client-basket"></a>
         </nav>
-        <img width="1000" src="img/maincar.png" alt="peugeot onyx image">
-         <label class="search">Search:<input class="search-row" type="search" placeholder="....Search"></label>
+        <div><img class="peugeot" src="img/maincar.png" alt="peugeot onyx image"></div>
+        <label class="search">Search : <input class="search-row" type="search" placeholder="....Search"></label>
     </header>
     <main>
+        <form class="my-list" method="POST" action="https://formspree.io/ijivsiji@gmail.com">
+            <ul class="list-product-category">Product Category
+                <li><label>
+                <input type="checkbox" name="listitem1" value="RTX 2080 Ti ">RTX 2080 Ti </label></li>
+                <li><label>
+                <input type="checkbox" name="listitem2" value="RTX 2080">RTX 2080 </label></li>
+                <li><label> <input type="checkbox" name="listitem3" value="RTX 2070">RTX 2070 </label></li>
+                <li><label> <input type="checkbox" name="listitem4" value="RTX 2060">RTX 2060 
+            </label></li>
+                <li> <label><input type="checkbox" name="listitem5" value="GTX 1660 Ti">GTX 1660 Ti </label></li>
+                <li><label> <input type="checkbox" name="listitem6" value="GTX 1080">GTX 1080
+            </label></li>
+                <li><label> <input type="checkbox" name="listitem7" value="GTX 1070 Ti">GTX 1070 Ti
+            </label></li>
+                <li><label> <input type="checkbox" name="listitem8" value="GTX 1070">GTX 1070</label></li>
+            </ul>
+            <ul class="list-manufacturer">Manufacturer
+                <li><label>
+                <input type="checkbox" name="listitem1" value="NVIDIA">NVIDIA </label></li>
+                <li><label>
+                <input type="checkbox" name="listitem2" value="ACER">ACER</label></li>
+                <li><label> <input type="checkbox" name="listitem3" value="ALIENWARE">ALIENWARE</label></li>
+                <li><label> <input type="checkbox" name="listitem4" value="ASUS">ASUS 
+            </label></li>
+                <li> <label><input type="checkbox" name="listitem5" value="DELL">DELL</label></li>
+                <li><label> <input type="checkbox" name="listitem6" value="EVGA">EVGA
+            </label></li>
+                <li><label> <input type="checkbox" name="listitem7" value="GIGABYTE">GIGABYTE</label></li>
+                <li><label> <input type="checkbox" name="listitem8" value="HP">HP</label></li>
+            </ul>
+            <ul class="list-price">Price  
+                <li><label>$ <input type="text" placeholder="$" name="client-name" required></label><br>
+                    <label>$ <input type="text" placeholder="$" name="client-name" required></label></li>
+            </ul>
+            <ul class="screen-size">Screen Size
+                <li><label>
+                <input type="checkbox" name="listitem1" value="17.3">17.3 </label></li>
+                <li><label>
+                <input type="checkbox" name="listitem2" value="15.6">15.6</label></li>
+                <li><label> <input type="checkbox" name="listitem3" value="15.54">15.54</label></li>
+            </ul>
+            <ul class="list-maxq">MAX-Q
+                <li><label>
+                <input type="checkbox" name="listitem1" value="Max-Q Design">Max-Q Design</label></li>
+
+            </ul>
+            <ul class="list-ram">Memory RAM
+                <li><label>
+                <input type="checkbox" name="listitem1" value="1 GB">1 GB</label></li>
+                <li><label>
+                <input type="checkbox" name="listitem1" value="2 GB">2 GB</label></li>
+                <li><label>
+                <input type="checkbox" name="listitem1" value="4 GB">4 GB</label></li>
+                <li><label>
+                <input type="checkbox" name="listitem1" value="8 GB">8 GB</label></li>
+                <li><label>
+                <input type="checkbox" name="listitem1" value="16 GB">16 GB</label></li>
+                <li><label>
+                <input type="checkbox" name="listitem1" value="24 GB">24 GB</label></li>
+
+            </ul>
+            <input class="button-reset-list" type="button" value="RESET FILTERS">
+        </form>
         <div class="product-container">
             <div class="prod-one">
-                <img class="first" alt="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" title="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" src="img/nvo.jpg">
-
-                <div class="second">
+                    <img class="first" alt="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" title="NVIDIA RTX 2080 Ti Graphics Cards and gaming laptops" src="img/nvo.jpg">
+                    <div class="second">
                     <h4 class="name">
                         NVIDIA GeForce RTX™ 2080 Ti
                     </h4>
@@ -47,20 +109,19 @@
                             <div class="specs">GPU Memory Size: 11 GB</div>
                         </li>
                     </ul>
-                </div>
+                    </div>
                 <div class="third">
                     <div class="product-price">
                         <h3>$ 1,199.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
             <div class="prod-one">
                 <img class="first" alt="NVIDIA RTX 2080 Graphics Cards and gaming laptops" title="NVIDIA RTX 2080 Graphics Cards and gaming laptops" src="img/nvt.jpg">
-
                 <div class="second">
                     <h4 class="name">
                         NVIDIA GeForce RTX™ 2080
@@ -82,14 +143,13 @@
                         <h3>$ 799.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
             <div class="prod-one">
                 <img class="first" alt="NVIDIA RTX 2070 Graphics Cards and gaming laptops" title="NVIDIA RTX 2070 Graphics Cards and gaming laptops" src="img/nvth.jpg">
-
                 <div class="second">
                     <h4 class="name">
                         NVIDIA GeForce RTX™ 2070
@@ -111,17 +171,16 @@
                         <h3>$ 599.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
             <div class="prod-one">
                 <img class="first" alt="NVIDIA GTX 1080 Graphics Cards and gaming laptops" title="NVIDIA GTX 1080 Graphics Cards and gaming laptops" src="img/nvf.jpg">
-
                 <div class="second">
                     <h4 class="name">
-                        NVIDIA GeForce GTX 1080 FOUNDERS 8GB EDITION GDDR5X
+                        NVIDIA GeForce GTX 1080<br> FOUNDERS 8GB EDITION GDDR5X
                     </h4>
                     <ul class="specs-table">
                         <li>
@@ -140,17 +199,16 @@
                         <h3>$ 549.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
             <div class="prod-one">
                 <img class="first" alt="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" title="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" src="img/nvfi.jpg">
-
                 <div class="second">
                     <h4 class="name">
-                        NVIDIA GeForce GTX 1070 Ti FOUNDERS EDITION 8GB GDDR5
+                        NVIDIA GeForce GTX 1070 Ti<br> FOUNDERS EDITION 8GB GDDR5
                     </h4>
                     <ul class="specs-table">
                         <li>
@@ -169,17 +227,16 @@
                         <h3>$ 449.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
             <div class="prod-one">
                 <img class="first" alt="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" title="NVIDIA GTX 1070 Ti Graphics Cards and gaming laptops" src="img/nvsix.jpg">
-
                 <div class="second">
                     <h4 class="name">
-                        NVIDIA GeForce GTX 1070 FOUNDERS EDITION 8GB GDDR5
+                        NVIDIA GeForce GTX 1070<br> FOUNDERS EDITION 8GB GDDR5
                     </h4>
                     <ul class="specs-table">
                         <li>
@@ -198,17 +255,16 @@
                         <h3>$ 399.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
             <div class="prod-one">
                 <img class="first" alt="NVIDIA GTX 1060 Graphics Cards and gaming laptops" title="NVIDIA GTX 1060 Graphics Cards and gaming laptops" src="img/nvsev.jpg">
-
                 <div class="second">
                     <h4 class="name">
-                        NVIDIA GeForce GTX 1060 FOUNDERS EDITION 6GB GDDR5
+                        NVIDIA GeForce GTX 1060<br> FOUNDERS EDITION 6GB GDDR5
                     </h4>
                     <ul class="specs-table">
                         <li>
@@ -227,310 +283,15 @@
                         <h3>$ 299.<sup>00</sup></h3>
                     </div>
                     <div class="addtocart">
-                        <a href="#"><img src="img/addto.jpg"></a>
+                        <a href="#" class="button19">Add to cart</a>
                     </div>
                     <span class="compare">Compare</span>
                 </div>
             </div>
-
         </div>
-        
-        <form class="ng-valid">
-            <input type="button" value="RESET FILTERS">
-            <ul class="filter-list">
-                <li <div>
-                    Product Category
-                    <div>
-                        <div class="filter-content">
-                            <ul class="filter-values">
-                                <li class="filter-value">
-                                    <div class="filter-values-content">
-                                        <input type="checkbox" id="category_filter-0" name="category_filter-0" value="false">
-                                        <label for="category_filter-0">
-												<span>Graphics Cards</span>	
-												</label>
-                                    </div>
-                                </li>
-                                <li class="filter-value">
-                                    <div class="filter-values-content">
-                                        <input type="checkbox" id="category_filter-1" name="category_filter-1" value="false">
-                                        <label for="category_filter-1">
-											<span>Gaming Laptops</span>	
-										    </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                </li>
-                <li class="filter-item medium-6 small-12" id="gpu_filter">
-                    <div>
-                        <div class="filter-title">
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                                <ul class="filter-values">
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-0" name="gpu_filter-0" value="false">
-                                            <label for="gpu_filter-0">
-												<span>RTX 2080 Ti</span>
-												<span class="float-right">(7)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-1" name="gpu_filter-1" value="false">
-                                            <label for="gpu_filter-1">
-												<span>RTX 2080</span>
-										        <span class="float-right">(33)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-2" name="gpu_filter-2" value="false">
-                                            <label for="gpu_filter-2">
-												<span>RTX 2070</span>
-												<span class="float-right">(27)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-3" name="gpu_filter-3" value="false">
-                                            <label for="gpu_filter-3">
-												<span>RTX 2060</span>
-												<span class="float-right">(24)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-4" name="gpu_filter-4" value="false">
-                                            <label for="gpu_filter-4">
-												<span>GTX 1660 Ti</span>
-												<span class="float-right">(9)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-5" name="gpu_filter-5" value="false">
-                                            <label for="gpu_filter-5">
-											<span>GTX 1080</span>
-										    <span class="float-right">(7)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-6" name="gpu_filter-6" value="false">
-                                            <label for="gpu_filter-6">
-											<span>GTX 1070 Ti</span>
-											<span class="float-right">(4)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="gpu_filter-7" name="gpu_filter-7" value="false">
-                                            <label for="gpu_filter-7">
-											<span>GTX 1070</span>
-										    <span class="float-right">(20)</span>
-											</label>
-                                        </div>
-                                        <div class="show-more-content">
-                                            <span class="title">Show More</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="filter-item medium-6 small-12" id="manufacturer_filter">
-                    <div>
-                        <div class="filter-title">
-                            Manufacturer
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                                <ul class="filter-values">
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-0" name="manufacturer_filter-0" value="false">
-                                            <label for="manufacturer_filter-0">
-												<span>NVIDIA</span>
-										    	<span class="float-right">(7)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-1" name="manufacturer_filter-1" value="false">
-                                            <label for="manufacturer_filter-1">
-												<span>ACER</span>
-											    <span class="float-right">(13)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-2" name="manufacturer_filter-2" value="false">
-                                            <label for="manufacturer_filter-2">
-												<span>ALIENWARE</span>
-												<span class="float-right">(6)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-3" name="manufacturer_filter-3" value="false">
-                                            <label for="manufacturer_filter-3">
-												<span>ASUS</span>
-	                                            <span class="float-right">(58)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-4" name="manufacturer_filter-4" value="false">
-                                            <label for="manufacturer_filter-4">
-												<span>DELL</span>
-												<span class="float-right">(17)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-5" name="manufacturer_filter-5" value="false">
-                                            <label for="manufacturer_filter-5">
-												<span>EVGA</span>
-                                                <span class="float-right">(17)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-6" name="manufacturer_filter-6" value="false">
-                                            <label for="manufacturer_filter-6">
-												<span>GIGABYTE</span>
-												<span class="float-right">(27)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="manufacturer_filter-7" name="manufacturer_filter-7" value="false">
-                                            <label for="manufacturer_filter-7">
-												<span>HP</span>
-												<span class="float-right">(8)</span>
-											</label>
-                                        </div>
-                                        <div class="show-more-content">
-                                            <span class="title">Show More</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="filter-item medium-6 small-12" id="price_filter">
-                    <div>
-                        <div class="filter-title">
-                            Price
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                                <div class="range-slider-container">
-                                    <div class="position-relative">
-                                        <label class="currency-symbol">$</label>
-                                        <input class="range-valid" min="0" name="val1" type="number">
-                                    </div>
-                                    <div class="position-relative">
-                                        <label class="currency-symbol">$</label>
-                                        <input class="range-slider" min="0" name="val2" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-title">
-                            Screen Size
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                                <ul class="filter-values">
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="screen_size_filter-0" name="screen_size_filter-0" value="false">
-                                            <label for="screen_size_filter-0">
-												<span>17.3"</span>
-                                                <span class="float-right">(42)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="screen_size_filter-1" name="screen_size_filter-1" value="false">
-                                            <label for="screen_size_filter-1">
-											<span>15.6"</span>
-											<span class="float-right">(83)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="screen_size_filter-2" name="screen_size_filter-2" value="false">
-                                            <label for="screen_size_filter-2">
-												<span>15.54"</span>
-                                                <span class="float-right">(2)</span>
-											</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="filter-item medium-6 small-12" id="max_q_filter">
-                    <div>
-                        <div class="filter-title">
-                            MAX-Q
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                                <ul class="filter-values">
-                                    <li class="filter-value">
-                                        <div class="filter-values-content">
-                                            <input type="checkbox" id="max_q_filter-0" name="max_q_filter-0" value="false">
-                                            <label for="max_q_filter-0">
-											<span>Max-Q Design</span>
-											</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="filter-item medium-6 small-12" id="sys_memory_size_filter">
-                    <div>
-                        <div class="filter-title">
-                            Memory RAM
-                        </div>
-                        <div>
-                            <div class="filter-content">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </form>
-    </main>
-</body>
 
+    </main>
+    <p class="rights-reserved">Copyright"©" Skorokhvatov Vladlen 2019 . All rights reserved</p>
+</body>
+ 
 </html>
