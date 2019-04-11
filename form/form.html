@@ -52,23 +52,21 @@
         <label class="search">Search : <input class="search-row" type="search" placeholder="....Search"></label>
     </header>
     <main>
+        <div class="formall">
         <h3>Для входа в личный кабинет заполните форму:</h3>
         <form method="POST" action="https://formspree.io/ijivsiji@gmail.com">
-            <label>
-               Емейл: <input type="email" placeholder="Емейл"
+            <label class="formlabel">
+               Емейл: <input class="forms" type="email" placeholder="Емейл"
                   name="client-email" required>
             </label>
-            <label>Пароль: 
-            <input type="password" placeholder="**********" 
+            <label class="formlabel">Пароль: 
+            <input class="forms" type="password" placeholder="**********" 
               name="client-password" required></label>
-            <br>
-            <br>
-            <input type="submit">
-            <a href="emeilrestore.html">Забыли пароль?</a>
-            <br>
-            <br>
-            <a href="registration.html">Регистрация</a>
+            <input class="buttons" type="submit">
+            <a class="buttons" href="emeilrestore.html">Забыли пароль?</a>
+            <a class="buttons" href="registration.html">Регистрация</a>
         </form>
+        </div>
     </main>
     <p class="rights-reserved">Copyright"©" Skorokhvatov Vladlen 2019 . All rights reserved</p>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
