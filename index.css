@@ -16,6 +16,7 @@ body {
 
 nav {
     display: flex;
+    max-width: 1400px;
     flex-flow: row;
     box-shadow: 0px 3px 12px 11px rgb(0, 0, 0);
     background: #000000 linear-gradient(#a5a5a5, #000000 70%);
