@@ -126,6 +126,30 @@ nav {
     /*border: 2px solid #102f14;*/
 }
 
+.this-page {
+    display: inline;
+    list-style-type: none;
+    margin: 0 0 5px 0;
+    align-content: center;
+    padding-left: 0;
+    padding-top: 10px;
+    background: #f2eeee linear-gradient(#cdcdcd, #60bf00 70%);
+    box-shadow: 0px 3px 12px 3px rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 6px;
+    color: black;
+}
+
+nav .nav-pages li .amenu-color {
+    font-size: 31px;
+    color: black;
+}
+
+nav .nav-pages li .amenu-color:hover {
+    color: #000000;
+    text-shadow: #3b3e38 0 0 3px;
+}
+
 nav .nav-pages li a:hover {
     color: #77b900;
     text-shadow: #71d029 0 0 10px;
@@ -165,9 +189,19 @@ nav .nav-pages li a {
 
 
 main {
-    max-width: 1000px;
-    margin: auto;
+    display: flex;
+    max-width: 1300px;
     font-family: 'Alegreya Sans SC', sans-serif;
+    justify-content: center;
+    color: white;
+    min-width: 180px;
+    box-shadow: 0px 3px 12px 3px rgb(0, 0, 0);
+    background: #443c3c linear-gradient(#5c5757, #000000b3 70%);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin: 15px 50px 30px 50px;
 }
 
 .carousel-control-next-icon,
@@ -176,4 +210,59 @@ main {
     width: 10px;
     height: 10px;
     background: no-repeat 50%/100% 100%;
+}
+
+.num-content {
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    min-width: 180px;
+    box-shadow: 0px 3px 12px 8px rgb(84, 175, 0);
+    background: #443c3c linear-gradient(#a09292, #000000b3 70%);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin: 15px 50px;
+}
+
+.callcenter {
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    min-width: 180px;
+    box-shadow: 0px 3px 12px 8px rgb(84, 175, 0);
+    background: #443c3c linear-gradient(#a09292, #000000b3 70%);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin: 15px 50px;
+}
+
+.gmap {
+    justify-content: center;
+    color: white;
+    padding: 2px;
+    min-width: 180px;
+    box-shadow: 0px 3px 12px 8px rgb(84, 175, 0);
+    background: #443c3c linear-gradient(#312f2f, #000000b3 70%);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin: 18px 5px;
+}
+.rights-reserved {
+    font-family: 'Bad Script', cursive;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 20px;
+    text-align: center;
+}
+.client-link>img:hover {
+    color: #77b900;
+    text-shadow: #71d029 0 0 10px;
 }
